@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Suchay Seelam Mini-Walden</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #000; /* full black */
+            color: white; /* all text white */
+        }
+
+        /* Top Header Area */
+        .header {
+            padding: 30px;
+            text-align: center;
+            font-size: 1.4rem;
+            font-weight: bold;
+            color: yellow;
+        }
+
+        /* Container for all rows */
+        .container {
+            width: 90%;
+            margin: 20px auto;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        /* Base row styles */
+        .row {
+            display: grid;
+            grid-template-columns: 200px 1fr; /* fixed image width, text flexible */
+            gap: 20px;
+            align-items: center;
+            padding: 15px;
+            background: #111; /* dark gray so rows stand out */
+            border: 1px solid #333;
+            border-radius: 8px;
+        }
+
+        /* Reversed rows (image on right) */
+        .row.reverse {
+            grid-template-columns: 1fr 200px;
+        }
+
+        .row.reverse img {
+            order: 2;
+        }
+
+        .row.reverse .description {
+            order: 1;
+        }
+
+        /* Images adjust to content height */
+        .row img {
+            width: 200px;
+            height: auto; /* maintain aspect ratio */
+            border-radius: 6px;
+            object-fit: cover;
+        }
+
+        .description {
+            font-size: 1rem;
+            line-height: 1.4rem;
+        }
+    </style>
+</head>
+<body>
+
+<div class="header">
+    My Mini-Walden
+</div>
+
+<div class="container">
+
+    <!-- ROW 1 -->
+    <div class="row">
+        <img src="IMG_0820.pdf" alt="Image 1">
+        <div class="description">
+            My room for me represents total solitude ever since my roommate moved out. As you can see my side of the room has gotten quite messy, but I navigate it easily and I find that solitude allows me to create a system around myself that works for me.
+        </div>
+    </div>
+
+    <!-- ROW 2 -->
+    <div class="row reverse">
+        <img src="MFDOOMAlbums.pdf" alt="Image 2">
+        <div class="description">
+            These are my top 5 albums from my Spotify Wrapped, all being MF DOOM. When walking to class or working in my friend's room, there is a lot of bustle around, but I feel a real sense of solitude and purpose when I start listening to music. The calmingness of my favorite music allows the escapism that Thoreau finds in Walden.
+        </div>
+    </div>
+
+    <!-- ROW 3 -->
+    <div class="row">
+        <img src="familypic.pdf" alt="Image 3">
+        <div class="description">
+            This is a picture with me and my family during our trip to Italy. This was one of the most fun vacations I've ever been on because there was minimal transportation and we walked everywhere. I learned to enjoy the sublimity around us and appreciated the beauty of nature, architecture, and everyday life.
+        </div>
+    </div>
+
+    <!-- ROW 4 -->
+    <div class="row reverse">
+        <img src="manshapicture.pdf" alt="Image 4">
+        <div class="description">
+            This is a picture of me and my girlfriend of almost two and a half years. This photo was taken after graduation. Being separated across the country creates a feeling of solitude that makes me appreciate our time together so much more. Being with her allowed me to discover a new type of passion that transcends material things.
+        </div>
+    </div>
+
+    <!-- ROW 5 -->
+    <div class="row">
+        <img src="graduation.pdf" alt="Image 5">
+        <div class="description">
+            This is a picture of me graduating with some of my closest friends back home. This reinforces a sense of solitude because what was once daily conversation now occurs only monthly. Looking at these photos forced me to begin a larger vision of self-discovery.
+        </div>
+    </div>
+
+    <!-- ROW 6 -->
+    <div class="row reverse">
+        <img src="snow.pdf" alt="Image 6">
+        <div class="description">
+            This picture is from the first snowfall I saw at Purdue. Coming from Texas, the snow felt almost magical, more peaceful and beautiful than I expected. But the cold here hits way harder than back home. That mix—the calm, sacred feel of the snow and the harshness of the cold—reminds me of the contrast between Walden and Into the Wild: nature can be comforting and brutal at the same time.
+        </div>
+    </div>
+
+</div>
+
+</body>
+</html>
